@@ -37,6 +37,7 @@ class Upload {
     }
 
     private function mvFile($file) {
+        $this->createDir(__DIR__ . "/../files_upload");
         $path = __DIR__ . "/../files_upload";
         $fileName = $file["userfile"]["name"];
         if(move_uploaded_file($file["userfile"]["tmp_name"], $path . '/' . $fileName)) {
@@ -56,5 +57,11 @@ class Upload {
             0 => "extensao não permitida",
             1 => "erro ao mover arquivo"
         );
+    }
+    
+   private function createDir($path) {
+        if (!file_exists($path)) {
+            mkdir($path, 0777, true);
+        }
     }
 }
