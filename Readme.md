@@ -6,8 +6,8 @@
 * PHP - PURE
 * CSS - PURE
 
-*use: Open index.html
-*Import xml generated from the federal recipe .xml 
+*use: Open index.html<br>
+*Import xml generated from the Brazilian Federal Revenue <strong>.xml</strong> 
 ![image](https://user-images.githubusercontent.com/101847989/185723438-5f36fa9b-bb21-4dcb-84c7-b420ba8a2ab0.png)
 
 *PDF GERADO:
