@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Xml</title>
+    <link rel="stylesheet" href="/xmlTopdf/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box_import">
+            <div>
+                <form name="uploadXml" enctype="multipart/form-data" method="POST">
+                    <!-- MAX_FILE_SIZE deve preceder o campo input -->
+                    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+                    <!-- O Nome do elemento input determina o nome da array $_FILES -->
+                    Enviar esse arquivo: <input name="userfile" type="file" />
+                    <input type="submit" value="Enviar arquivo" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="ajx.js"></script>
+</body>
+</html>
